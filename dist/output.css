@@ -554,20 +554,8 @@ video {
   left: -18rem;
 }
 
-.-top-3 {
-  top: -0.75rem;
-}
-
 .bottom-0 {
   bottom: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .top-0 {
@@ -1356,6 +1344,10 @@ a {
 
   .sm\:mt-\[88px\] {
     margin-top: 88px;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:h-\[72px\] {
