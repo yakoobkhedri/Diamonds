@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: PollerOne-Regular;
+  font-weight: 400;
+  src: url('../src/fonts/PollerOne-Regular.ttf') format("truetype");
+}
+
+@font-face {
   font-family: fanumber-Regular;
   font-weight: 400;
   src: url('../src/fonts/YekanBakhFaNum-Regular.woff') format("woff");
@@ -52,16 +58,7 @@
 
   src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
-.font-faNumRegular{
-  font-weight: 400;
-  @apply ltr:font-MontserratRegular;
-  
-}
-.font-faNumBold{
-  font-weight: 700;
-  @apply ltr:font-MontserratBold;
-}
-.font-normal{
+/* .font-normal{
   font-weight: 400;
   @apply rtl:font-paydaRegular ltr:font-MontserratRegular;
 }
@@ -84,13 +81,13 @@
 .font-black{
   font-weight: 900;
   @apply rtl:font-paydaBlack ltr:font-MontserratBold;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: payda-Regular !important;
+  font-family: PollerOne-Regular !important;
   user-select: none;
   overflow-x: hidden;
   background: linear-gradient(180.96deg, #020202 0.82%, #3F2E8E 69.66%);

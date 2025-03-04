@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -727,8 +731,16 @@ video {
   flex-grow: 1;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .grid-cols-1 {
@@ -1000,6 +1012,14 @@ video {
 }
 
 @font-face {
+  font-family: PollerOne-Regular;
+
+  font-weight: 400;
+
+  src: url('../src/fonts/PollerOne-Regular.ttf') format("truetype");
+}
+
+@font-face {
   font-family: fanumber-Regular;
 
   font-weight: 400;
@@ -1075,96 +1095,37 @@ video {
   src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
 
-.font-faNumRegular{
+/* .font-normal{
   font-weight: 400;
+  @apply rtl:font-paydaRegular ltr:font-MontserratRegular;
 }
-
-:is([dir="ltr"] .font-faNumRegular) {
-  font-family: Montserrat-Regular;
-}
-
-.font-faNumBold{
-  font-weight: 700;
-}
-
-:is([dir="ltr"] .font-faNumBold) {
-  font-family: Montserrat-Bold;
-}
-
-.font-normal{
-  font-weight: 400;
-}
-
-:is([dir="ltr"] .font-normal) {
-  font-family: Montserrat-Regular;
-}
-
-:is([dir="rtl"] .font-normal) {
-  font-family: payda-Regular;
-}
-
 .font-medium{
   font-weight: 500;
+  @apply rtl:font-paydaMedium;
 }
-
-:is([dir="rtl"] .font-medium) {
-  font-family: payda-Medium;
-}
-
 .font-semibold{
   font-weight: 600;
+  @apply rtl:font-paydaSemiBold ltr:font-MontserratBold;
 }
-
-:is([dir="ltr"] .font-semibold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-semibold) {
-  font-family: payda-SemiBold;
-}
-
 .font-bold{
   font-weight: 700;
+  @apply rtl:font-paydaBold ltr:font-MontserratBold;
 }
-
-:is([dir="ltr"] .font-bold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-bold) {
-  font-family: payda-Bold;
-}
-
 .font-extrabold{
   font-weight: 800;
+  @apply rtl:font-paydaExtraBold ltr:font-MontserratBold;
 }
-
-:is([dir="ltr"] .font-extrabold) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-extrabold) {
-  font-family: payda-ExtraBold;
-}
-
 .font-black{
   font-weight: 900;
-}
-
-:is([dir="ltr"] .font-black) {
-  font-family: Montserrat-Bold;
-}
-
-:is([dir="rtl"] .font-black) {
-  font-family: payda-Black;
-}
+  @apply rtl:font-paydaBlack ltr:font-MontserratBold;
+} */
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: payda-Regular !important;
+  font-family: PollerOne-Regular !important;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

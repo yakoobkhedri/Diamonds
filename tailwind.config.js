@@ -20,6 +20,7 @@ module.exports = {
         'custom':'calc((100% - 1256px) / 2)'
        },
       fontFamily: {
+        PollerOneRegular: "pollerOne-Regular",
         paydaRegular: "payda-Regular",
         paydaMedium: "payda-Medium",
         paydaSemiBold: "payda-SemiBold",
